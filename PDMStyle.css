@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-transform: none;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+/* Navigation Bar */
+nav{
+    background:linear-gradient(to right, #002775,#2ab0f4);
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
+label.Logo{
+    user-select: none;
+    color: white;
+    line-height: 80px;
+    padding: 0 100px;
+}
+nav ul{
+    user-select: none;
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 7px 5px;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: black;
+    background: rgb(255, 255, 255);
+    transform: translateY(50deg);
+    transition: 0.8s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 980px){
+    label.Logo{
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #01153d,#2ab1f4d6);
+        top: -100%;
+        left: 0;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 20px 0;
+        line-height: 80px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked + label{
+        transform: rotateZ(90deg);
+        transition: all 1s;
+    }
+    #check:not(:checked) + label{
+        transition: all 1s;
+    }
+    #check:checked ~ ul{
+        top: 80px;
+    }
+}
+/* Navigation Bar End */
+
+
+
+/* First Page Start */
+#FirstPage{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    overflow: hidden;
+    background-position: center;
+    background-image: /*linear-gradient(rgba(94, 92, 92, 0.5),rgba(68, 62, 62, 0.658)), */ url(Background/PDMBETTER2);
+}
+
+.Text{
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    z-index: 0;
+    margin-top: 100px;
+    display: inline-block;
+    padding: 20px;
+
+}
+
+.Text:hover{
+    box-shadow: 0px 0px 20px 5px rgb(0, 157, 242);
+    background: #2ab1f4a0;
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.Text:not(:hover){
+    transform: scale(0.8);
+    transition: 1s;
+}
+
+.img-fluid:hover{
+    display: inline-block;
+    box-shadow: 0px 0px 20px 5px rgb(0, 157, 242);
+    transform: scale(0.9);
+    transition: 1s;
+}
+.img-fluid:not(:hover){
+    display: inline-block;
+    transform: scale(0.8);
+    transition: 1s;
+}
+/* First Page End */
+
+
+/* Second Page Start */
+#SecondPage{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-position: center;
+    background-image: /*linear-gradient(rgba(94, 92, 92, 0.5),rgba(68, 62, 62, 0.658)), */ url(Background/PDMINSIDEFIXED.png);
+    z-index: 1;
+}
+/* Second Page End */
+
+
+/* Third Page Start */
+#ThirdPage{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;  
+    background-image:url(Background/Office/OFfice1FIXED.png);
+}
+
+.SectionTeam{
+    display: inline-block;
+    color: white;
+    background:linear-gradient(to top, #0a3997,#2ab1f4);
+    box-shadow: 0px 0px 20px 5px rgb(0, 157, 242);
+    border-radius: 20px;
+    padding: 10px;
+    width: fit-content;
+}
+.card{
+    display: inline-block;
+    background:linear-gradient(to top, #0a3997,#2ab1f4cd);
+}
+
+.card:hover{
+    box-shadow: 0px 0px 20px 5px rgb(0, 157, 242);
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+.card:not(:hover){
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.name_work{
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+}
+/* Third Page End */
