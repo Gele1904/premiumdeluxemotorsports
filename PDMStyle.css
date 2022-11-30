@@ -7,7 +7,15 @@
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
     scroll-behavior: smooth;
 }
-
+.copyright h1{
+    padding: 10px;
+    font-size: 20px;
+}
+.copyright{
+    display: block;
+    height: 3rem;
+    background:linear-gradient(to right, #002775,#2ab0f4);
+}
 
 
 /* Navigation Bar */
