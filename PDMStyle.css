@@ -9,12 +9,12 @@
     user-select: none;
 }
 .copyright h1{
-    padding: 20px;
-    font-size: 20px;
+    padding-top: 15px;
+    font-size: 15px;
 }
 .copyright{
     display: block;
-    height: 5rem;
+    height: 3rem;
     background:linear-gradient(to right, #002775,#2ab0f4);
 }
 
