@@ -181,7 +181,7 @@ nav li a:hover {
     display: inline-block;
     box-shadow: 0px 0px 20px 5px rgb(0, 157, 242);
     transform: scale(0.9);
-    cursor: pointer;
+    cursor: zoom-in;
     transition: 0.5s;
 }
 
@@ -300,6 +300,7 @@ nav li a:hover {
 .card {
     display: inline-block;
     background: linear-gradient(to top, #0a3997, #2ab1f4);
+    cursor: pointer;
 }
 
 .card:hover {
