@@ -326,7 +326,6 @@ nav li a:hover {
 .card {
     display: inline-block;
     background: linear-gradient(to top, #0a3997, #2ab1f4);
-    cursor: pointer;
 }
 
 .card:hover {
