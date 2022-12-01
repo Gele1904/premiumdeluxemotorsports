@@ -388,18 +388,20 @@
     </div>
   </footer>
   <script>
-
+    
+    // PDM Map Pop Up START
     document.querySelectorAll('.text-center img').forEach(image => {
       image.onclick = () => {
         document.querySelector('.popup-image').style.display = 'block';
         document.querySelector('.popup-image img').src = image.getAttribute('src');
       }
     });
-
+    
     document.querySelector('.popup-image span').onclick = () => {
       document.querySelector('.popup-image').style.display = 'none';
     };
-
+    // PDM Map Pop Up END
+    
   </script>
 </body>
 
