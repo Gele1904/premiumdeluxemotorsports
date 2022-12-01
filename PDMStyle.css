@@ -183,7 +183,7 @@ nav li a:hover {
 
 .img-fluid:hover {
     display: inline-block;
-    box-shadow: 0px 0px 20px 5px rgb(0, 157, 242);
+    box-shadow: 0rem 0rem 1rem 0.7rem rgb(0, 157, 242);
     transform: scale(0.9);
     cursor: zoom-in;
     transition: 0.5s;
@@ -257,6 +257,7 @@ nav li a:hover {
 
 #SecondPage .card {
     background: linear-gradient(to top, #002775, #2ab1f4);
+    cursor: pointer;
 }
 
 #SecondPage .card:hover {
@@ -277,7 +278,17 @@ nav li a:hover {
 #SecondPage .card:not(:hover) .card-header-text {
     background: #164ebdbf;
 }
-
+.btn{
+    color: white !important;
+}
+.btn:hover{
+    box-shadow: inset -10rem 0 0 0 rgb(15, 155, 231), inset 10rem 0 0 0 rgb(15, 155, 231) !important;
+    transition: 0.5s;
+}
+.btn:not(:hover){
+        box-shadow: inset 0rem 0 0 0 rgba(15, 155, 231, 0.362), inset 0rem 0 0 0 rgba(15, 155, 231, 0.362) !important;
+        transition: 0.5s;
+}
 /* Second Page End */
 
 
@@ -301,10 +312,9 @@ nav li a:hover {
     width: fit-content;
 }
 
-.card {
+#Staff-Team .card {
     display: inline-block;
     background: linear-gradient(to top, #0a3997, #2ab1f4);
-    cursor: pointer;
 }
 
 .card:hover {
