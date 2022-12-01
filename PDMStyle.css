@@ -72,15 +72,15 @@ nav li a:hover{
 }
 @media (max-width: 980px){
     label.Logo{
-        font-size: 18px;
-        padding-left: 10px;
+        font-size: 20px;
+        padding-left: 20px;
     }
     nav ul li a{
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 768px){
     .checkbtn{
         display: block;
     }
@@ -88,7 +88,7 @@ nav li a:hover{
         position: fixed;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom, #01153d,#2ab1f4d6);
+        background: linear-gradient(to bottom, #01153d,#2ab1f4ce);
         top: -100%;
         left: 0;
         text-align: center;
