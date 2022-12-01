@@ -6,17 +6,17 @@
     text-transform: none;
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
     scroll-behavior: smooth;
-    user-select: none;
 }
 .copyright h1{
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
 }
 .copyright{
     display: block;
-    height: 5rem;
+    height: 3rem;
     background:linear-gradient(to right, #002775,#2ab0f4);
 }
+
 
 /* Navigation Bar */
 nav{
@@ -55,7 +55,7 @@ nav li a:hover{
     color: black;
     background: rgb(255, 255, 255);
     transform: translateY(50deg);
-    transition: 0.7s;
+    transition: 0.6s;
 }
 
 .checkbtn{
@@ -170,7 +170,7 @@ nav li a:hover{
 /* Second Page Start */
 #SecondPage{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
