@@ -49,12 +49,14 @@ nav ul li a{
     font-weight: bold;
     border-radius: 5px;
     padding: 7px 5px;
+    box-shadow:  inset 0 0 0 0 #6510d4b9;
+    transition:  ease-out 0.5s;
     text-decoration: none;
 }
 nav li a:hover{
     color: white;
-    background: #6510d4b9;
-    transform: translateY(50deg);
+    box-shadow: inset 10rem 0 0 0 #6510d4b9;
+    cursor: pointer;
     transition: 0.7s;
 }
 
@@ -178,6 +180,9 @@ nav li a:hover{
     background-position: center;
     background-image: /*linear-gradient(rgba(94, 92, 92, 0.5),rgba(68, 62, 62, 0.658)), */ url(Background/PDMINSIDEFIXED.png);
     z-index: 1;
+}
+#SecondPage .card{
+    background:linear-gradient(to top, #5b03cd,#2ab1f410);
 }
 .card-header{
     background:linear-gradient(to top, #6510d4,#2ab1f45c);
