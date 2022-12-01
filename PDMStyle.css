@@ -159,7 +159,7 @@ nav li a:hover {
     border-radius: 160px 0px 160px 0px;
     color: white;
     z-index: 0;
-    margin-top: 100px;
+    margin-top: 80px;
     display: inline-block;
     padding: 20px;
 
@@ -174,7 +174,8 @@ nav li a:hover {
 }
 
 .Text:not(:hover) {
-
+    box-shadow: inset -4px 0px 40px 0px #164ebdbf, inset 4px 0px 40px 0px #164ebdbf;
+    background: #1a79d24b;
     transform: scale(0.8);
     transition: 0.5s;
     

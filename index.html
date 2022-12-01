@@ -52,17 +52,23 @@
           <div id="cards"></div>
           <div class="location" style="color: white;">
             <center>
-              <h2><i class="fa-solid fa-location-pin" style="color: crimson;"></i> Location: </h2>
+              <h2><i class="fa-solid fa-location-dot" style="color: crimson;"></i> Location: </h2>
             </center>
             <center>
               <h2> Adam's Apple Boulevard </h2>
             </center>
             <div class="text-center">
               <div class="image-container">
-                <img src="Logo/PDMMAP498x400.png" class="img-fluid" alt="PDM Map" style="border-radius: 20px;">
+                <img src="Logo/PDMMAP498x400WithoutPin.png" class="img-fluid" alt="PDM Map" style="border-radius: 20px;">
                 <div class="popup-image">
                   <span>&times;</span>
-                  <img src="logo/PDMMAP4" alt="PDM Map Big">
+                  <center>
+                    <h2><i class="fa-solid fa-location-dot" style="color: crimson; padding-top: 200px;"></i> Location: </h2>
+                  </center>
+                  <center>
+                    <h2> Adam's Apple Boulevard </h2>
+                  </center>
+                  <img src="logo/PDMMAP498x400PIN.png" alt="PDM Map Big">
                 </div>
               </div>
             </div>
@@ -405,10 +411,10 @@
   <script>
 
     // PDM Map Pop Up START
-    document.querySelectorAll('.text-center img').forEach(image => {
+    document.querySelectorAll('.text-center img').forEach (image => {
       image.onclick = () => {
         document.querySelector('.popup-image').style.display = 'block';
-        document.querySelector('.popup-image img').src = image.getAttribute('src');
+        document.querySelector('.popup-image img').getElementsByClassName = ('img2');
       }
     });
 
