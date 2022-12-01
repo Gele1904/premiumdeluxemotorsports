@@ -52,8 +52,8 @@ nav ul li a{
     text-decoration: none;
 }
 nav li a:hover{
-    color: black;
-    background: rgb(255, 255, 255);
+    color: white;
+    background: #6510d4b9;
     transform: translateY(50deg);
     transition: 0.7s;
 }
@@ -179,11 +179,14 @@ nav li a:hover{
     background-image: /*linear-gradient(rgba(94, 92, 92, 0.5),rgba(68, 62, 62, 0.658)), */ url(Background/PDMINSIDEFIXED.png);
     z-index: 1;
 }
+.card-header{
+    background:linear-gradient(to top, #6510d4,#2ab1f45c);
+}
 /* Second Page End */
 
 
 /* Third Page Start */
-#ThirdPage{
+#Staff-Team{
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
