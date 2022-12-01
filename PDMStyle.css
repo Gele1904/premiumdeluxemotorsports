@@ -277,7 +277,6 @@ nav li a:hover {
 #SecondPage .card:not(:hover) .card-header-text {
     background: #164ebdbf;
 }
-<<<<<<< HEAD
 .btn{
     color: white !important;
 }
@@ -301,9 +300,6 @@ nav li a:hover {
     width: fit-content;
 
 }
-=======
-
->>>>>>> parent of dc90e38 (Update buttons)
 /* Second Page End */
 
 
