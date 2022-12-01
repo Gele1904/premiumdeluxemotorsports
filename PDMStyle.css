@@ -197,6 +197,9 @@ nav li a:hover{
     .text-center .popup-image img{
         width: 95%;
     }
+    .img-fluid{
+        width: 95%;
+    }
 }
 /* First Page End */
 
@@ -214,7 +217,7 @@ nav li a:hover{
     z-index: 1;
 }
 #SecondPage .card{
-    background:linear-gradient(to top, #640fd2,#2ab1f471);
+    background:linear-gradient(to top, #5b03cd,#2ab1f410);
 }
 .card-header{
     background:linear-gradient(to top, #6510d4,#2ab1f45c);
