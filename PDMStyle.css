@@ -6,7 +6,6 @@
     text-transform: none;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     scroll-behavior: smooth;
-    user-select: none;
 }
 
 .copyright h1 {
@@ -66,14 +65,15 @@ nav ul li a {
     font-weight: bold;
     border-radius: 5px;
     padding: 7px 20px;
-    box-shadow: inset -4px 0px 0px 0px #164ebdbf, inset 4px 0px 0px 0px #164ebdbf;
+    box-shadow: inset -4px 0px 0px 0px #671bea, inset 4px 0px 0px 0px #671bea;
     transition: ease-out 0.5s;
     text-decoration: none;
+    
 }
 
 nav li a:hover {
     color: white;
-    box-shadow: inset -15rem 0rem 0 0 #164ebdbf, inset 15rem 0rem 0 0 #164ebdbf;
+    box-shadow: inset -15rem 0rem 0 0 #671bea, inset 15rem 0rem 0 0 #671bea;
     cursor: pointer;
     transition: 0.8s;
 }
@@ -103,6 +103,8 @@ nav li a:hover {
     }
 }
 
+
+
 @media (max-width: 768px) {
     .checkbtn {
         display: block;
@@ -119,25 +121,44 @@ nav li a:hover {
     }
 
     nav {
-        background: black;
+        background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(111, 0, 175, 0.979));
+    }
+
+    nav ul li a {
+
+        box-shadow: inset -4px 0px 0px 0px rgba(209, 209, 209, 0.801), inset 4px 0px 0px 0px rgba(209, 209, 209, 0.801);
+        transition: ease-out 0.5s;
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+
+        color: black;
+        box-shadow: inset -15rem 0rem 0 0 rgba(209, 209, 209, 0.801), inset 15rem 0rem 0 0 rgba(209, 209, 209, 0.801);
+        cursor: pointer;
+        transition: 0.8s;
+
     }
 
     ul {
+
         position: fixed;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom, #000000, grey);
-        top: -100%;
-        left: 0;
+        background: linear-gradient(to top, rgb(0, 0, 0), rgba(111, 0, 175, 0.979)) !important;
+        left: -100%;
         text-align: center;
         transition: all 0.5s;
         z-index: 1;
+
     }
 
     nav ul li {
+
         display: block;
-        margin: 20px 0;
+        margin: 80px 0;
         line-height: 80px;
+
     }
 
     nav ul li a {
@@ -154,8 +175,10 @@ nav li a:hover {
     }
 
     #check:checked~ul {
+        left: 0px;
         top: 80px;
     }
+
 }
 
 /* Navigation Bar End */
@@ -186,7 +209,6 @@ nav li a:hover {
     margin-top: 80px;
     display: inline-block;
     padding: 40px;
-
 }
 
 .Text:hover {
@@ -202,15 +224,16 @@ nav li a:hover {
     background: #1a79d24b;
     transform: scale(0.8);
     transition: 0.5s;
-    
 }
 
 .img-fluid:hover {
+
     display: inline-block;
     box-shadow: 0px 0px 20px 5px rgb(0, 157, 242);
     transform: scale(0.9);
     cursor: zoom-in;
     transition: 0.5s;
+
 }
 
 .img-fluid:not(:hover) {
@@ -267,6 +290,37 @@ nav li a:hover {
     .popup-image h2{
         padding-top: 12rem;
     }
+
+    .Text:hover {
+
+        box-shadow: inset -100rem 0 0 0 rgba(111, 0, 175, 0.294), inset 100rem 0 0 0 rgba(111, 0, 175, 0.3);
+        transform: scale(0.9);
+        transition: 0.5s;
+    
+    }
+    
+    .Text:not(:hover) {
+        box-shadow: inset -4px 0px 40px 0px rgba(246, 246, 246, 0.56), inset 4px 0px 40px 0px rgba(111, 0, 175, 0.294);
+        background: #671bea71;
+        transform: scale(0.8);
+        transition: 0.5s;
+    }
+
+    .img-fluid:hover {
+
+        box-shadow: 0px 0px 20px 5px rgba(111, 0, 175, 0.979);
+        transform: scale(0.9);
+        
+    }
+
+    .copyright {
+        background: linear-gradient(to top, rgb(0, 0, 0), rgba(111, 0, 175, 0.979));
+    }
+
+    .copyright h1 {
+        color: white;
+    }
+    
 }
 
 @media (max-width: 380px){
@@ -301,9 +355,11 @@ nav li a:hover {
         /*linear-gradient(rgba(94, 92, 92, 0.5),rgba(68, 62, 62, 0.658)), */
         url(Background/PDMINSIDEFIXED.png);
     z-index: 1;
+    user-select: none;
 }
 
 #SecondPage .card {
+
     background: linear-gradient(to top, #002775, #2ab1f4);
 }
 
@@ -325,13 +381,16 @@ nav li a:hover {
 #SecondPage .card:not(:hover) .card-header-text {
     background: #164ebdbf;
 }
+
 .btn{
     color: white !important;
 }
+
 .btn:hover{
     box-shadow: inset -10rem 0 0 0 rgb(15, 155, 231), inset 10rem 0 0 0 rgb(15, 155, 231) !important;
     transition: 0.7s;
 }
+
 .btn:not(:hover){
         box-shadow: inset 0rem 0 0 0 rgba(15, 155, 231, 0.362), inset 0rem 0 0 0 rgba(15, 155, 231, 0.362) !important;
         transition: 0.7s;
@@ -347,6 +406,54 @@ nav li a:hover {
     padding: 10px;
     width: fit-content;
 
+}
+
+
+@media (max-width: 768px){
+
+    .DocumentsTitle {
+
+        background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(111, 0, 175, 0.979)) !important;
+        box-shadow: 0px 0px 20px 10px #671bea !important;
+        transition: 0.8s !important;
+    
+    }
+
+    #SecondPage .card {
+        background: linear-gradient(to top, rgb(0, 0, 0), rgba(111, 0, 175, 0.979)) !important;
+    }
+
+    #SecondPage .card:hover {
+        box-shadow: 0px 0px 20px 15px #8801dc !important;
+        background: linear-gradient(to right, #7d00cb, rgb(111, 0, 175)) !important;
+    }
+
+    #SecondPage .card-header-text {
+        background: #540188 !important;
+    }
+
+    #SecondPage .card:hover .card-header-text {
+        background: #44006e !important;
+    }
+
+    .btn{
+        border: none !important;
+        background: #7d00cb !important;
+    }
+
+    .btn:hover{
+        box-shadow: inset -4px 0px 40px 0px rgba(246, 246, 246, 0.56), inset 4px 0px 40px 0px rgba(111, 0, 175, 0.294) !important;
+        transition: 0.7s;
+    }
+
+    .btn:not(:hover){
+        box-shadow: inset -4px 0px 40px 0px rgba(246, 246, 246, 0.56), inset 4px 0px 40px 0px rgba(111, 0, 175, 0.294) !important;
+        transition: 0.7s;
+    }
+
+    #SecondPage .card:hover .btn {
+        background: #44006e !important;
+    }
 }
 /* Second Page End */
 
@@ -374,11 +481,13 @@ nav li a:hover {
     border-radius: 20px;
     padding: 10px;
     width: fit-content;
+    user-select: none;
 }
 
 .card {
     display: inline-block;
     background: linear-gradient(to top, #0a3997, #2ab1f4);
+    user-select: none;
 }
 
 .card:hover {
@@ -397,5 +506,29 @@ nav li a:hover {
     text-align: center;
     background: white;
     border-radius: 20px;
+}
+
+@media (max-width: 768px){
+    .SectionTeam {
+
+        background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(111, 0, 175, 0.979)) !important;
+        box-shadow: 0px 0px 20px 10px #671bea !important;
+        transition: 0.8s !important;
+ 
+    }
+
+    .card {
+
+        background: linear-gradient(to top, rgb(44, 0, 77), rgba(64, 0, 101, 0.979)) !important;
+
+    }
+    
+    .card:hover {
+
+        box-shadow: 0px 0px 20px 10px #8801dc !important;
+        background: linear-gradient(to right, #7d00cb, rgb(111, 0, 175)) !important;
+
+    }
+    
 }
 /* Third Page End */
