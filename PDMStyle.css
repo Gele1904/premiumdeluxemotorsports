@@ -20,6 +20,8 @@
     background: linear-gradient(to right, #002775, #2ab0f4);
 }
 
+
+
 /* Navigation Bar */
 nav {
     background: linear-gradient(to right, #002775, #2ab0f4);
@@ -65,7 +67,7 @@ nav li a:hover {
     color: white;
     box-shadow: inset -15rem 0 0 0 #164ebdbf, inset 15rem 0 0 0 #164ebdbf;
     cursor: pointer;
-    transition: 0.7s;
+    transition: 0.8s;
 }
 
 .checkbtn {
@@ -174,7 +176,7 @@ nav li a:hover {
 }
 
 .Text:not(:hover) {
-    box-shadow: inset -4px 0px 40px 0px #164ebdbf, inset 4px 0px 40px 0px #164ebdbf;
+    box-shadow: inset -4px 0px 40px 0px #164ebdbf, inset 4px 0px 40px 0px #2ab0f4;
     background: #1a79d24b;
     transform: scale(0.8);
     transition: 0.5s;
@@ -240,6 +242,10 @@ nav li a:hover {
 /* First Page End */
 
 
+
+
+
+
 /* Second Page Start */
 #SecondPage {
     width: 100%;
@@ -282,14 +288,14 @@ nav li a:hover {
 }
 .btn:hover{
     box-shadow: inset -10rem 0 0 0 rgb(15, 155, 231), inset 10rem 0 0 0 rgb(15, 155, 231) !important;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 .btn:not(:hover){
         box-shadow: inset 0rem 0 0 0 rgba(15, 155, 231, 0.362), inset 0rem 0 0 0 rgba(15, 155, 231, 0.362) !important;
-        transition: 0.5s;
+        transition: 0.7s;
 }
 
-.SectionDocuments {
+.DocumentsTitle {
 
     display: inline-block;
     color: white;
@@ -301,6 +307,11 @@ nav li a:hover {
 
 }
 /* Second Page End */
+
+
+
+
+
 
 
 /* Third Page Start */
@@ -345,5 +356,4 @@ nav li a:hover {
     background: white;
     border-radius: 20px;
 }
-
 /* Third Page End */
