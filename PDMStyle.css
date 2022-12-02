@@ -273,6 +273,12 @@ nav li a:hover {
     }
 }
 
+@media (max-width: 360px){
+    .popup-image h2 {
+        padding-top: 7rem;
+    }
+}
+
 /* First Page End */
 
 
