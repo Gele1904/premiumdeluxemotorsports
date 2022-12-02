@@ -32,6 +32,7 @@ nav {
 }
 
 label.Logo {
+    display: inline-block;
     user-select: none;
     color: white;
     line-height: 80px;
@@ -40,9 +41,8 @@ label.Logo {
 
 label.Logo2 {
     user-select: none;
-    color: white;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 80px;
     display: none;
 }
 
@@ -112,8 +112,10 @@ nav li a:hover {
     }
 
     label.Logo2{
-        display: block;
+        display: inline-block;
+        width: 0rem;
         padding-left: 20px;
+        margin: 0 auto;
     }
 
     nav {
