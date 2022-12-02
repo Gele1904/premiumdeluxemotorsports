@@ -65,7 +65,7 @@ nav ul li a {
 
 nav li a:hover {
     color: white;
-    box-shadow: inset -15rem 0 0 0 #164ebdbf, inset 15rem 0 0 0 #164ebdbf;
+    box-shadow: inset -15rem 0rem 0 0 #164ebdbf, inset 15rem 0rem 0 0 #164ebdbf;
     cursor: pointer;
     transition: 0.8s;
 }
