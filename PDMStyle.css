@@ -38,6 +38,14 @@ label.Logo {
     padding: 0 100px;
 }
 
+label.Logo2 {
+    user-select: none;
+    color: white;
+    line-height: 80px;
+    padding: 0 100px;
+    display: none;
+}
+
 nav ul {
     user-select: none;
     float: right;
@@ -99,12 +107,24 @@ nav li a:hover {
     .checkbtn {
         display: block;
     }
+    label.Logo{
+        display: none;
+    }
+
+    label.Logo2{
+        display: block;
+        padding-left: 20px;
+    }
+
+    nav {
+        background: black;
+    }
 
     ul {
         position: fixed;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom, #01153d, #2ab1f4ce);
+        background: linear-gradient(to bottom, #000000, grey);
         top: -100%;
         left: 0;
         text-align: center;
@@ -114,7 +134,7 @@ nav li a:hover {
 
     nav ul li {
         display: block;
-        margin: 20px 0;
+        margin: 100px 0;
         line-height: 80px;
     }
 
