@@ -341,8 +341,7 @@ nav li a:hover {
 
 .container .cards .face.face1{
     position: relative;
-    background: #1660f3;
-    /*background: linear-gradient(to top, #0a3997, #2ab1f4);*/
+    background: linear-gradient(to top, #0a3997, #2ab1f4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -413,7 +412,7 @@ nav li a:hover {
 .cards:hover {
     box-shadow: 0px 0px 20px 5px rgb(0, 157, 242);
     background: linear-gradient(to right, #022c80, #5600d7);
-    transform: scale(1);
+    transform: scale(0.9s);
     transition: 0.5s;
 }
 
@@ -421,35 +420,36 @@ nav li a:hover {
     transform: scale(0.9);
     transition: 0.5s;
 }
-@media (max-width: 768px){
-    .SectionTeam {
-
-        background: linear-gradient(to bottom, rgba(55, 2, 86, 0.979), rgba(111, 0, 175, 0.979)) !important;
-        box-shadow: 0px 0px 20px 10px #671bea !important;
-        transition: 0.8s !important;
-
-    }
-
-    .cards {
-
-        background: linear-gradient(to top, rgb(44, 0, 77), rgba(64, 0, 101, 0.979)) !important;
-
-    }
-
-    .cards:hover {
-
-        box-shadow: 0px 0px 20px 10px #8801dc !important;
-        background: linear-gradient(to right, #7d00cb, rgb(111, 0, 175)) !important;
-
-    }
-
-}
 
 h5{
     font-size: 1.5rem;
 }
 h6{
     font-size: 1.25rem;
+}
+
+@media (max-width: 768px){
+    .DocumentsTitle{
+
+        background: linear-gradient(to bottom, rgba(55, 2, 86, 0.979), rgba(111, 0, 175, 0.979)) !important;
+        box-shadow: 0px 0px 20px 3px #671bea !important;
+    }
+    .container .cards .face.face1{
+
+        background: linear-gradient(to bottom, rgba(55, 2, 86, 0.979), rgba(111, 0, 175, 0.979));
+
+    }
+    .container .cards:hover .face.face1{
+
+        background: linear-gradient(to right, #7d00cb, rgb(111, 0, 175)) !important;
+
+    }
+    .cards:hover {
+
+        box-shadow: 0px 0px 20px 5px #671bea !important;
+        background: linear-gradient(to right, #7d00cb, rgb(111, 0, 175)) !important;
+
+    }
 }
 /* Second Page End */
 
@@ -517,8 +517,7 @@ h6{
     .SectionTeam {
 
         background: linear-gradient(to bottom, rgba(55, 2, 86, 0.979), rgba(111, 0, 175, 0.979)) !important;
-        box-shadow: 0px 0px 20px 10px #671bea !important;
-        transition: 0.8s !important;
+        box-shadow: 0px 0px 20px 3px #671bea !important;
  
     }
 
@@ -536,4 +535,5 @@ h6{
     }
     
 }
+
 /* Third Page End */
