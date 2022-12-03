@@ -16,18 +16,29 @@
   <!-- First Page Start -->
   <section id="FirstPage">
     <!-- Navigation Bar -->
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="Logo"><img src="Logo/unknown.png" height="75px"></label>
-      <label class="Logo2"><a href="https://discord.gg/plrp" target="_blank"><img src="Logo/discordlogoround.png" height="60px"></a></label>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#Staff">Staff</a></li>
-        <li><a href="#cards">Documents</a></li>
-      </ul>
+    <nav class="navbar fixed-top navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://discord.gg/plrp" target="_blank"><img src="Logo/discordlogoround.png" style="height: 60px;"></a>
+        <label class="title"><img src="logo/unknown.png" height="60px"></label>
+        <button id="button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars" style="font-size: 35px;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <label id="logo"><a href="https://discord.gg/plrp" target="_blank"><img src="Logo/discordlogoround.png" style="height: 45px;"></a></label>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Cards"> Documents </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Staff"> Staff </a>
+            </li>
+            <label id="logo2"><a href="https://discord.gg/plrp" target="_blank"><img src="Logo/fivemround.png" style="height: 45px; padding-right: 7rem;"></a></label>
+          </ul>
+        </div>
+      </div>
     </nav>
     <!-- Navigation Bar End -->
 
@@ -81,7 +92,7 @@
 
 
 
-  <div id="cards"></div>
+  <div id="Cards"></div>
   <!-- Second Page Start -->
   <section id="SecondPage">
     <div class="container text-center">
@@ -408,11 +419,11 @@
 <!-- Footer End -->
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"crossorigin="anonymous"></script>
 
 
   <script>
-
     // PDM Map Pop Up START
     document.querySelectorAll('.text-center img').forEach (image => {
       image.onclick = () => {
@@ -425,7 +436,6 @@
       document.querySelector('.popup-image').style.display = 'none';
     };
     // PDM Map Pop Up END
-
   </script>
 </body>
 
