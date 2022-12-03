@@ -330,6 +330,7 @@ nav li a:hover {
     border-radius: 10px;
     position: relative;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .container .cards .face{
@@ -429,27 +430,32 @@ h6{
 }
 
 @media (max-width: 768px){
+
     .DocumentsTitle{
 
         background: linear-gradient(to bottom, rgba(55, 2, 86, 0.979), rgba(111, 0, 175, 0.979)) !important;
         box-shadow: 0px 0px 20px 3px #671bea !important;
     }
+
     .container .cards .face.face1{
 
         background: linear-gradient(to bottom, rgba(55, 2, 86, 0.979), rgba(111, 0, 175, 0.979));
 
     }
+
     .container .cards:hover .face.face1{
 
         background: linear-gradient(to right, #7d00cb, rgb(111, 0, 175)) !important;
 
     }
+
     .cards:hover {
 
         box-shadow: 0px 0px 20px 5px #671bea !important;
         background: linear-gradient(to right, #7d00cb, rgb(111, 0, 175)) !important;
 
     }
+    
 }
 /* Second Page End */
 
@@ -535,5 +541,4 @@ h6{
     }
     
 }
-
 /* Third Page End */
