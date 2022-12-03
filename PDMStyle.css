@@ -299,104 +299,156 @@ nav li a:hover {
     user-select: none;
 }
 
-#SecondPage .card {
-
-    background: linear-gradient(to top, #002775, #2ab1f4);
-
-}
-
-#SecondPage .card:hover {
-
-    background: linear-gradient(to right, #022c80cf, #5600d7);
-    
-}
-
-#SecondPage .card-header-text {
-    background: #164ebdbf;
-    padding: 2px;
-    border-radius: 15px;
-}
-
-#SecondPage .card:hover .card-header-text {
-    background: #189bdcc8;
-
-}
-
-#SecondPage .card:not(:hover) .card-header-text {
-    background: #164ebdbf;
-}
-
-.btn{
-    color: white !important;
-}
-
-.btn:hover{
-    box-shadow: inset -10rem 0 0 0 rgb(15, 155, 231), inset 10rem 0 0 0 rgb(15, 155, 231) !important;
-    transition: 0.7s;
-}
-
-.btn:not(:hover){
-        box-shadow: inset 0rem 0 0 0 rgba(15, 155, 231, 0.362), inset 0rem 0 0 0 rgba(15, 155, 231, 0.362) !important;
-        transition: 0.7s;
-}
-
 .DocumentsTitle {
 
-    display: inline-block;
+    display: flex;
     color: white;
     background: linear-gradient(to top, #0a3997, #2ab1f4);
-    box-shadow: 0px 0px 20px 5px rgb(0, 157, 242);
+    box-shadow: 0px 0px 20px 3px rgba(0, 157, 242, 0.8);
     border-radius: 20px;
-    padding: 10px;
-    width: fit-content;
-
+    /*padding: 10px;*/
+    width: 12rem;
+    height: 4rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-end;
 }
 
+.DocumentsTitle p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
+.container{
+    width: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 12px;
+}
+
+.container .cards{
+    position: relative;
+    cursor: pointer;
+}
+
+.container .cards .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.9s;
+}
+
+.container .cards .face.face1{
+    position: relative;
+    background: #1660f3;
+    /*background: linear-gradient(to top, #0a3997, #2ab1f4);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .cards:hover .face.face1{
+    background: #5600d7;
+    transform: translateY(0);
+}
+
+.container .cards .face.face1 .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container .cards .face.face1 .content img{
+    max-width: 100px;
+}
+
+.container .cards .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .cards .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .cards:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .cards .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .cards .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.container .cards .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+
+.cards:hover {
+    box-shadow: 0px 0px 20px 5px rgb(0, 157, 242);
+    background: linear-gradient(to right, #022c80, #5600d7);
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.cards:not(:hover) {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
 @media (max-width: 768px){
-
-    .DocumentsTitle {
+    .SectionTeam {
 
         background: linear-gradient(to bottom, rgba(55, 2, 86, 0.979), rgba(111, 0, 175, 0.979)) !important;
         box-shadow: 0px 0px 20px 10px #671bea !important;
         transition: 0.8s !important;
-    
+
     }
 
-    #SecondPage .card {
-        background: linear-gradient(to top, rgb(42, 41, 41), rgba(111, 0, 175, 0.979)) !important;
+    .cards {
+
+        background: linear-gradient(to top, rgb(44, 0, 77), rgba(64, 0, 101, 0.979)) !important;
+
     }
 
-    #SecondPage .card:hover {
-        box-shadow: 0px 0px 20px 15px #8801dc !important;
+    .cards:hover {
+
+        box-shadow: 0px 0px 20px 10px #8801dc !important;
         background: linear-gradient(to right, #7d00cb, rgb(111, 0, 175)) !important;
-    }
-
-    #SecondPage .card-header-text {
-        background: #540188 !important;
-    }
-
-    #SecondPage .card:hover .card-header-text {
-        background: #44006e !important;
-    }
-
-    .btn{
-        border: none !important;
-        background: #540188 !important;
-    }
-
-    .btn:hover{
-
-        box-shadow: inset -4px 0px 40px 0px rgba(246, 246, 246, 0.56), inset 4px 0px 40px 0px rgba(111, 0, 175, 0.294) !important;
-        transition: 0.7s;
 
     }
 
-    #SecondPage .card:hover .btn {
+}
 
-        background: #44006e !important;
-        
-    }
+h5{
+    font-size: 1.5rem;
+}
+h6{
+    font-size: 1.25rem;
 }
 /* Second Page End */
 
