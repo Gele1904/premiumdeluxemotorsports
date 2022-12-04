@@ -342,7 +342,7 @@ nav li a:hover {
 
 .container .cards .face.face1{
     position: relative;
-    background: linear-gradient(to top, #0a3997, #2ab1f4);
+    background: #1d8cc3;
     display: flex;
     justify-content: center;
     align-items: center;
