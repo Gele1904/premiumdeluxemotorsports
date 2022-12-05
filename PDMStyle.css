@@ -530,7 +530,11 @@ h6{
 
 .card2 .back {
     transform: perspective(600px) rotateY(180deg);
-    background: linear-gradient(to top, #0a3997, #2ab1f4);
+    background:  rgb(0, 0, 0, 0.5)url(Employees/EmployeeBackgroundTemplate/CardBackgroundTemplate.png);
+    background-position: center;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 15px;
     color: #f3f3f3;
     display: flex;
