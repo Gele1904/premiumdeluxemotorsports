@@ -487,36 +487,80 @@ h6{
     margin: 0 auto;
     justify-content: center;
     align-items: flex-end;
-
-}
-
-.SectionTeam p{
     font-size: 1.5rem;
     font-weight: 500;
+
+}
+.card2 {
+    position: relative;
+    width: 256px;
+    height: 256px;
+    margin: 20px auto;
+    cursor: pointer;
 }
 
-.card {
-    display: inline-block;
-    background: linear-gradient(to top, #0a3997, #2ab1f4);
-    user-select: none;
-}
-
-.card:hover {
-    box-shadow: 0px 0px 20px 3px rgb(0, 157, 242);
-    background: linear-gradient(to right, #022c80, #5600d7);
-    transform: scale(1);
+.card2 .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
     transition: 0.5s;
 }
 
-.card:not(:hover) {
-    transform: scale(0.9);
-    transition: 0.5s;
+.card2 .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
 }
 
-.name_work {
+.card2 .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.card2 .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
     text-align: center;
-    background: white;
-    border-radius: 20px;
+}
+
+.card2 .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: linear-gradient(to top, #0a3997, #2ab1f4);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.card2 p{
+    padding-top: 10px;
+    border-top: 2px solid white;
+    border-radius: 180px;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card2:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card2:hover .back {
+    transform: perspective(600px) rotateY(360deg);
 }
 
 @media (max-width: 768px){
@@ -526,19 +570,8 @@ h6{
         box-shadow: 0px 0px 20px 3px #671bea !important;
  
     }
-
-    .card {
-
-        background: linear-gradient(to top, rgb(44, 0, 77), rgba(64, 0, 101, 0.979)) !important;
-
-    }
-    
-    .card:hover {
-
-        box-shadow: 0px 0px 20px 3px #8801dc !important;
-        background: linear-gradient(to right, #7d00cb, rgb(111, 0, 175)) !important;
-
-    }
-    
+    .card2 .back{
+        background: linear-gradient(to bottom, rgba(55, 2, 86, 0.979), rgba(111, 0, 175, 0.979))
+    }  
 }
 /* Third Page End */
