@@ -34,6 +34,10 @@ nav{
 
 }
 
+.navbar-is-hidden{
+    display: none;
+}
+
 .nav-link{
 
     color: white !important;
@@ -497,6 +501,7 @@ h6{
     height: 256px;
     margin: 20px auto;
     cursor: pointer;
+    user-select: none;
 }
 
 .card2 .face {
@@ -525,6 +530,7 @@ h6{
 .card2 .front h3 {
     position: absolute;
     bottom: 0;
+    font-size: 1.25rem;
     width: 100%;
     line-height: 45px;
     color: #fff;
@@ -544,13 +550,19 @@ h6{
     box-shadow: 0 5px 10px #000;
 }
 .card2 p{
+    font-size: 1.18rem;
+    font-weight: 500;
     padding-top: 10px;
     border-top: 2px solid white;
-    border-radius: 180px;
+    border-radius: 80px;
+}
+.card2 .phone{
+    user-select: all;
 }
 
-.card .back h3 {
-    font-size: 30px;
+.card2 .back h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
     margin-top: 20px;
     letter-spacing: 2px;
 }
