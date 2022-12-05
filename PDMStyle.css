@@ -33,11 +33,6 @@ nav{
     z-index: 2 !important;
 
 }
-
-.navbar-is-hidden{
-    display: none;
-}
-
 .nav-link{
 
     color: white !important;
@@ -55,11 +50,6 @@ nav ul li {
 
 }
 
-.navbar-brand{
-
-    display: none;
-
-}
 
 nav ul li a {
 
