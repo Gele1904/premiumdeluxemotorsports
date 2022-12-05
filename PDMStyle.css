@@ -577,7 +577,11 @@ h6{
  
     }
     .card2 .back{
-        background: linear-gradient(to bottom, rgba(55, 2, 86, 0.979), rgba(111, 0, 175, 0.979))
+        background:  rgb(0, 0, 0, 0.5)url(Employees/EmployeeBackgroundTemplate/CardBackgroundTemplate.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
     }  
 }
 /* Third Page End */
