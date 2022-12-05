@@ -38,6 +38,12 @@ nav{
     color: white !important;
 
 }
+.navbar-brand{
+
+    display: none;
+
+}
+
 nav .navbar-nav a{
 
     font-size: 1.15rem !important;
