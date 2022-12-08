@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-transform: none;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.copyright h1 {
+
+    color: white;
+    padding-top: 15px;
+    font-size: 15px;
+
+}
+
+.copyright {
+
+    display: block;
+    height: 3rem;
+    background: linear-gradient(to right, #002775, #2ab0f4);
+
+}

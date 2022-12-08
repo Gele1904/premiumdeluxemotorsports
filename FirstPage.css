@@ -1,0 +1,155 @@
+/* First Page Start */
+#FirstPage {
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    overflow: hidden;
+    background-position: center;
+    background-image: url(Background/PDMBETTER2);
+
+}
+
+.Text {
+    text-align: center;
+    border-radius: 160px 0px 160px 0px;
+    color: white;
+    z-index: 0;
+    margin-top: 80px;
+    display: inline-block;
+    padding: 40px;
+    user-select: none;
+}
+
+.Text:hover {
+
+    box-shadow: inset -100rem 0rem 0rem 0rem rgba(15, 155, 231, 0.706), inset 100rem 0rem 0rem 0rem rgba(15, 155, 231, 0.362);
+    transform: scale(0.9);
+    transition: 0.5s;
+
+}
+
+.Text:not(:hover) {
+    box-shadow: inset -4rem 0rem 3rem 0rem #0a39978f, inset 4rem 0rem 3rem 0rem #2ab1f494;
+    background: #1a79d229;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+.img-fluid:hover {
+
+    display: inline-block;
+    box-shadow: 0px 0px 20px 3px rgba(0, 157, 242, 0.6);
+    transform: scale(0.9);
+    cursor: zoom-in;
+    transition: 0.5s;
+
+}
+
+.img-fluid:not(:hover) {
+    display: inline-block;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+.text-center .popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.text-center .popup-image span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.text-center .popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    width: 750px;
+    object-fit: cover;
+}
+
+.popup-image h2 {
+    padding-top: 5rem;
+}
+
+.location {
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .text-center .popup-image img {
+        width: 95%;
+        margin-top: 2rem;
+    }
+
+    .img-fluid {
+        width: 95%;
+    }
+
+    .popup-image h2 {
+        padding-top: 12rem;
+    }
+
+    .Text:hover {
+
+        box-shadow: inset -100rem 0 0 0 #081847, inset 100rem 0 0 0 #152F7D;
+        transform: scale(0.9);
+        transition: 0.5s;
+
+    }
+
+    .Text:not(:hover) {
+        box-shadow: inset -4px 0px 40px 0px #081847, inset 4px 0px 40px 0px #152F7D;
+        background: #10266671;
+        transform: scale(0.8);
+        transition: 0.5s;
+    }
+
+    .img-fluid:hover {
+
+        box-shadow: 0px 0px 20px 5px #13369E;
+        transform: scale(0.9);
+
+    }
+
+    .copyright {
+        background: linear-gradient(to top, #081847, #152F7D);
+    }
+
+    .copyright h1 {
+        color: white;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .popup-image h2 {
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .popup-image h2 {
+        padding-top: 7rem;
+    }
+}
+
+/* First Page End */

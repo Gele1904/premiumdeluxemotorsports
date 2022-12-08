@@ -1,0 +1,159 @@
+/* Navigation Bar */
+header {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to right, #002775, #2ab1f4);
+    position: fixed;
+    z-index: 2;
+}
+
+.nav-bar-pos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+    margin-left: -30px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.logo {
+    height: 5rem;
+    margin: 0 auto;
+    margin-left: 10rem;
+}
+
+.disc-phone {
+    display: none;
+    height: 3rem;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: block;
+    color: white;
+}
+
+.nav-bar ul li a:hover {
+    box-shadow: inset 0rem 5rem 0rem 0rem #243e8f;
+    cursor: pointer;
+    transition: 1s;
+}
+
+@media only screen and (max-width: 1190px) {
+    .logo { 
+        margin-left: 4rem;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .logo {
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .logo {
+        margin-left: 0rem;
+    }
+
+    .nav-bar ul a {
+        margin-left: -2rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        position: absolute;
+        top: 1.5rem;
+        left: 90%;
+        display: block;
+        margin-left: -0.7rem;
+    }
+
+    .hamburger .line {
+        width: 27px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+        border-radius: 10px;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: linear-gradient(to top, #081847, #152F7D);
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 200px;
+        z-index: 1;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 10px auto 0px auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul li a {
+        border-bottom: 2px solid black;
+        border-radius: 40px;
+    }
+
+    .nav-bar ul li {
+        padding-bottom: 1rem;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+        margin-left: -2rem;
+    }
+
+    header {
+        background: linear-gradient(to bottom, #081847, #152F7D);
+    }
+
+    .discord-logo {
+        display: none;
+    }
+
+    .logo {
+        height: 4rem;
+        display: flex;
+        margin: -3.5rem auto;
+    }
+
+    .disc-phone {
+        display: inline-block;
+        margin-top: 1rem;
+        margin-left: 10px;
+    }
+}
+
+/* Navigation Bar End */
