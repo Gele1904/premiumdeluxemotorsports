@@ -556,7 +556,7 @@ h6{
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 .card2 .front {
