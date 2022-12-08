@@ -14,7 +14,7 @@
     color: white;
     background: linear-gradient(to top, #0a3997, #2ab1f4);
     box-shadow: 0px 0px 20px 3px rgba(0, 157, 242, 0.8);
-    border-radius: 20px;
+    border-radius: 10px;
     width: 12rem;
     height: 4rem;
     margin: 0 auto;
@@ -114,8 +114,8 @@
 @media (max-width: 768px) {
     .SectionTeam {
 
-        background: linear-gradient(to top, #081847, #152F7D) !important;
-        box-shadow: 0px 0px 20px 3px #13369E !important;
+        background: linear-gradient(to top, #081847, #152F7D);
+        box-shadow: 0px 0px 20px 3px #13369E;
 
     }
 
