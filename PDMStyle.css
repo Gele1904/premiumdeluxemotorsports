@@ -79,7 +79,7 @@ header {
 }
 
 @media only screen and (max-width: 1190px) {
-    .logo {
+    .logo { 
         margin-left: 4rem;
     }
 }
@@ -196,7 +196,7 @@ header {
     background-attachment: local;
     overflow: hidden;
     background-position: center;
-    background-image: /*linear-gradient(rgba(94, 92, 92, 0.5),rgba(68, 62, 62, 0.658)), */ url(Background/PDMBETTER2);
+    background-image: url(Background/PDMBETTER2);
 
 }
 
@@ -352,7 +352,7 @@ header {
     background-attachment: fixed;
     overflow: hidden;
     background-position: center;
-    background-image: /*linear-gradient(rgba(94, 92, 92, 0.5),rgba(68, 62, 62, 0.658)), */ url(Background/PDMINSIDEFIXED.png);
+    background-image: url(Background/PDMINSIDEFIXED.png);
     z-index: 1;
     user-select: none;
 }
@@ -511,7 +511,6 @@ h6 {
     .cards:hover {
 
         box-shadow: 0px 0px 20px 5px #13369E !important;
-        background: #1339AC !important;
 
     }
 
