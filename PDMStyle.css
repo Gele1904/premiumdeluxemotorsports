@@ -460,9 +460,8 @@ header{
 }
 
 .cards:hover {
-    box-shadow: 0px 0px 20px 5px rgb(0, 157, 242);
-    background: linear-gradient(to bottom, #0a3997, #2ab1f4);
-    transform: scale(0.9s);
+    box-shadow: 0px 0px 20px 5px rgba(0, 157, 242, 0.5);
+    transform: scale(0.9);
     transition: 0.5s;
 }
 
