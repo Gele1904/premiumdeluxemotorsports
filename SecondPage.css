@@ -147,25 +147,25 @@ h6 {
 
     .DocumentsTitle {
 
-        background: linear-gradient(to top, #081847, #152F7D);
-        box-shadow: 0px 0px 20px 3px #13369E;
+        background: linear-gradient(to top, #081847, #152F7D) !important;
+        box-shadow: 0px 0px 20px 3px #13369E !important;
     }
 
     .container .cards .face.face1 {
 
-        background: #152F7D
+        background: #152F7D !important;
 
     }
 
     .container .cards:hover .face.face1 {
 
-        background: #1339AC;
+        background: #1339AC !important;
 
     }
 
     .cards:hover {
 
-        box-shadow: 0px 0px 20px 5px #13369E;
+        box-shadow: 0px 0px 20px 5px #13369E !important;
 
     }
 
