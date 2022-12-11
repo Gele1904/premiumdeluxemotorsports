@@ -48,7 +48,7 @@ header {
 .nav-bar ul li a:hover {
     box-shadow: inset 0rem 5rem 0rem 0rem #243e8f;
     cursor: pointer;
-    transition: 1s;
+    transition: 1.5s;
 }
 
 @media only screen and (max-width: 1190px) {
